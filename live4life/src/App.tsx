@@ -1,12 +1,22 @@
 import React from "react";
-import ApartmentCardContainer from "./components/ApartmentCardContainer"; 
+import styled from "styled-components";
+import TopRow from "./components/TopRow";
+import BottomRow from "./components/BottomRow";
+
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Reduced spacing between rows */
+  padding: 16px;
+  background-color: #f9f9f9;
+`;
 
 const App = () => {
   return (
-    <div>
-      
-      <ApartmentCardContainer />
-    </div>
+    <AppContainer>
+      <TopRow />
+      <BottomRow />
+    </AppContainer>
   );
 };
 
